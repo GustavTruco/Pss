@@ -12,10 +12,12 @@ void factoresPrimos(int n){
             p++;
         }
     }
+    return;
 }
 
 int main(int argc, char *argv[]){
     int n =atoi(argv[1]);
     factoresPrimos(n);
+    printf("/n");
     return 0;
     }
