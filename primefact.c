@@ -19,7 +19,7 @@ void factoresPrimos(int n){
 int main(int argc, char *argv[]){
     int n =atoi(argv[1]);
     if (n==1){
-        printf(1);
+        printf("1");
     }
     else{
         factoresPrimos(n);
