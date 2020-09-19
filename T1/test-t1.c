@@ -123,7 +123,7 @@ int main() {
     }
   }
 
-  { // Secuencia duplicada de tamaño 1
+  { // Secuencia duplicada de tamaÃ±o 1
     // int tam=dupMasLargo(0b11);
     // x>>1 == 0b1
     // tam==1, sec==0b1
@@ -160,16 +160,16 @@ int main() {
   }
 
   { // Otra secuencia de largo 32
-    // int tam=dupMasLargo(0x3af5c
+    //
     // x>>9 == 0b1011 0010 0100
     // tam==9, sec==0b1 0010 0100
-    printf("Verificando con x = 0x3af13c80\n");
+    printf("Verificando con x = 0x3af13c803af13c80\n");
     unsigned long long xm= 0x3af13c80;
     unsigned long long res=dupMasLargo((xm<<32)|xm);
     int tam= res >> 32;
     unsigned int sec= res;
     if (tam!=32) {
-      fprintf(stderr, "Largo debe ser 9, no %d\n", tam);
+      fprintf(stderr, "Largo debe ser 32, no %d\n", tam);
       exit(1);
     }
     if (sec!=xm) {
