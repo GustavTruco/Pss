@@ -7,8 +7,6 @@ int main(int argc, char *argv[]){
     for (int i=n;i>=1;i--){
         answer= answer*i;
     }
-    printf("%d",n);
-    printf("\n");
     printf("%d", answer);
     printf("\n");
     return 0;
