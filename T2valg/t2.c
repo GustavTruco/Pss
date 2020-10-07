@@ -6,7 +6,6 @@ void reducir(char *s){
     char *p=s;
 	char *r=s;
 	char *q=s+1;
-	int i=0;
 	while (*p){
 	    if (*r==' ' && *q==' '){
 	        r++;
