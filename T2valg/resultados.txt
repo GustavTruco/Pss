@@ -1,0 +1,30 @@
+make test-g:
+
+Benchmark de la parte a
+Tiempo para reducir: 5245
+Benchmark de la parte b
+Tiempo para reduccion: 6962
+Benchmark de la parte b implementada a partir de la parte a
+Tiempo para reduccion: 8722
+Felicitaciones: Aprobo todos los tests
+
+make test-O:
+
+Benchmark de la parte a
+Tiempo para reducir: 3180
+Benchmark de la parte b
+Tiempo para reduccion: 4510
+Benchmark de la parte b implementada a partir de la parte a
+Tiempo para reduccion: 7684
+Felicitaciones: Aprobo todos los tests
+
+make test-O-m32:
+
+Benchmark de la parte a
+Tiempo para reducir: 3002
+Benchmark de la parte b
+Tiempo para reduccion: 4786
+Benchmark de la parte b implementada a partir de la parte a
+Tiempo para reduccion: 7818
+Felicitaciones: Aprobo todos los tests
+
