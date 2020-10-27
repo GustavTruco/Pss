@@ -27,3 +27,9 @@ void desbalancear(Nodo **pa, Nodo **pult){
     paux->der=nodo_actual;
     nodo_actual->izq=NULL;
 }
+
+Nodo *desbalanceado(Nodo *a, Nodo **pult){
+    Nodo nxref= { 'x', 0, NULL, NULL };
+    Nodo *p= &nxref;
+    return p;
+}
