@@ -16,9 +16,9 @@ void desbalancear(Nodo **pa, Nodo **pult){
         desbalancear(& nodo_actual->izq,& nodo_actual);
     }
    
-    desbalancear(& nodo_actual->izq,& nodo_actual);
-    desbalancear(& nodo_actual->der,NULL);
-
+    if (nodo_actual->izq!=NULL){desbalancear(& nodo_actual->izq,& nodo_actual);}
+    if (nodo_actual->der!=NULL){desbalancear(& nodo_actual->der,NULL);}
+    
     Nodo *paux= nodo_actual->izq;
 
     while(paux->der!=NULL){
