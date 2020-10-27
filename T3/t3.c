@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "t3.h";
+#include "t3.h"
 
 void desbalancear(Nodo **pa, Nodo **pult){
     Nodo *nodo_actual=*pa;
