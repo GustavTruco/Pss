@@ -42,9 +42,10 @@ Nodo *desbalanceado(Nodo *a, Nodo **pult){
         return nuevo;
     }
     if (nodo_actual->izq!=NULL){
-        (*pult)->der=desbalanceado((nodo_actual->izq),pult);
+        *padre=*pult
+        padre->der=desbalanceado((nodo_actual->izq),pult);
         (*pult)->der=nuevo;
-        *pult=nodo_actual;
+        *pult=nuevo;
     }
 
     if (nodo_actual->der!=NULL){
