@@ -161,28 +161,119 @@ static Nodo nuref= { 'u', 0, NULL, &nvref };
 static Nodo nsref= { 's', 0, NULL, &nuref };
 
 int main() {
+  /**
+  printf("Primero se verifica desbalanceado porque es mas facil\n");
+  printf("-----------------------------------------------------\n\n");
+
+  {
+    printf("Verificando el arbol vacio\n");
+    Nodo *a= NULL;
+    Nodo *ult;
+    Nodo *des= desbalanceado(a, &ult);
+    comparar(des, NULL);
+    comparar(ult, NULL);
+  }
+
+  {
+    printf("Verificando arbol de un solo nodo\n");
+    Nodo *a= copia(&nxref);
+    Nodo *ult;
+    Nodo *des= desbalanceado(a, &ult);
+    comparar(des, &nxref);
+    comparar(ult, &nxref);
+    liberar(a); liberar(des);
+  }
+
+  {
+    printf("Verificando arbol con un nodo raiz y un nodo derecho\n");
+    Nodo *a= copia(&nwref);
+    Nodo *ult;
+    Nodo *des= desbalanceado(a, &ult);
+    comparar(des, &nwref);
+    comparar(ult, &nxref);
+    liberar(a); liberar(des);
+  }
+
+  {
+    printf("Verificando arbol con un nodo raiz y u nodo izquierdo\n");
+    Nodo *a= copia(&nx);
+    Nodo *ult;
+    Nodo *des= desbalanceado(a, &ult);
+    comparar(des, &nwref);
+    comparar(ult, &nxref);
+    liberar(a); liberar(des);
+  }
+
   {
     printf("Verificando ejemplo del enunciado\n");
     Nodo *a= copia(&nv);
     Nodo *ult;
-    /**
     Nodo *des= desbalanceado(a, &ult);
     comparar(des, &nsref);
     comparar(ult, &nxref);
-    liberar(des);
     comparar(a, &nv);
-    */
-   
+    liberar(a); liberar(des);
+  }
+
+  */
+  printf("\nAhora se verifica desbalancear\n");
+  printf(  "------------------------------\n\n");
+
+  {
+    printf("Verificando el arbol vacio\n");
+    Nodo *a= NULL;
+    Nodo *ult;
+    desbalancear(&a, &ult);
+    comparar(a, NULL);
+    comparar(ult, NULL);
+  }
+
+  {
+    printf("Verificando arbol de un solo nodo\n");
+    Nodo *a= copia(&nxref);
+    Nodo *ult;
+    desbalancear(&a, &ult);
+    comparar(a, &nxref);
+    comparar(ult, &nxref);
+    liberar(a);
+  }
+
+  {
+    printf("Verificando arbol con un nodo raiz y un nodo derecho\n");
+    Nodo *a= copia(&nwref);
+    Nodo *ult;
+    desbalancear(&a, &ult);
+    comparar(a, &nwref);
+    comparar(ult, &nxref);
+    liberar(a);
+  }
+
+  {
+    printf("Verificando arbol con un nodo raiz y u nodo izquierdo\n");
+    Nodo *a= copia(&nx);
+    Nodo *ult;
+    desbalancear(&a, &ult);
+    comparar(a, &nwref);
+    comparar(ult, &nxref);
+    liberar(a);
+  }
+
+  {
+    printf("Verificando ejemplo del enunciado\n");
+    Nodo *a= copia(&nv);
+    Nodo *ult;
     desbalancear(&a, &ult);
     comparar(a, &nsref);
     comparar(ult, &nxref);
     liberar(a);
-    printf("Aprobado\n");
   }
+
+  printf("\nTests aprobados\n\n");
 
   {
     int n= 100000;
     printf("Verificando un arbol de 100 mil nodos\n");
+    printf("-------------------------------------\n\n");
     Nodo *a= equilibrado(1, n);
     Nodo *ref= copia(a);
     Nodo *ult;

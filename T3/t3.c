@@ -5,27 +5,24 @@
 
 void desbalancear(Nodo **pa, Nodo **pult){
     Nodo *nodo_actual=*pa;
-    Nodo *nodo_pas= *pult;
-    if (nodo_actual->der==NULL && nodo_actual->izq==NULL){
-        nodo_actual->der=nodo_pas;
+    if (a->izq==NULL and a->der==NULL){
+        *pult=a;
         return;
     }
-    else if (nodo_actual->der==NULL && nodo_pas!=NULL){
-        nodo_pas->izq=nodo_actual->izq;
-        nodo_actual->izq=NULL;
-        desbalancear(& nodo_actual->izq,& nodo_actual);
-    }
-   
-    if (nodo_actual->izq!=NULL){desbalancear(& nodo_actual->izq,& nodo_actual);}
-    if (nodo_actual->der!=NULL){desbalancear(& nodo_actual->der,NULL);}
-    
-    Nodo *paux= nodo_actual->izq;
+    if (a->izq!=NULL){
+        desbalancear(&(a->izq),pult);
 
-    while(paux->der!=NULL){
-        paux=paux->der;
+        Nodo *aux=a->izq;
+        while (aux->der!=NULL){
+            *aux=aux->der;
+        }
+        a->izq=NULL;
+        aux->der=a;
     }
-    paux->der=nodo_actual;
-    nodo_actual->izq=NULL;
+
+    if (a->der!=NULL){
+        desbalancear(&(a->der),pult);
+    }
 }
 
 Nodo *desbalanceado(Nodo *a, Nodo **pult){
