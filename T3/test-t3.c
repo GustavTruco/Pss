@@ -277,12 +277,13 @@ int main() {
     Nodo *a= equilibrado(1, n);
     Nodo *ref= copia(a);
     Nodo *ult;
+    /**
     Nodo *des= desbalanceado(a, &ult);
     verificar_des(des, n, ult);
     liberar_des(des);
     comparar(a, ref);
     liberar(ref);
-
+    */
     desbalancear(&a, &ult);
     verificar_des(a, n, ult);
     Nodo *b= a;
