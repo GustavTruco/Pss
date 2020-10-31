@@ -7,6 +7,8 @@ void desbalancear(Nodo **pa, Nodo **pult){
     if (*pa==NULL){
         return;
     }
+    printf("Nodo Id= %d", nodo_actual->id);
+    
     Nodo *nodo_actual=*pa;
     if (nodo_actual->izq==NULL && nodo_actual->der==NULL){
         *pult=nodo_actual;
@@ -14,9 +16,8 @@ void desbalancear(Nodo **pa, Nodo **pult){
     }
     if (nodo_actual->izq!=NULL){
         desbalancear(&(nodo_actual->izq),pult);
-        printf("Nodo Id= %d", nodo_actual->id);
+    
         Nodo *aux=nodo_actual->izq;
-
         while (aux->der!=NULL){
             aux=aux->der;
         }
