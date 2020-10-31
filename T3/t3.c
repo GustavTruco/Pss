@@ -28,7 +28,8 @@ void desbalancear(Nodo **pa, Nodo **pult){
 
 Nodo *desbalanceado(Nodo *a, Nodo **pult){
     if (a==NULL){
-        return NULL;
+        Nodo *a= NULL;
+        return a;
     }
     Nodo *nodo_actual=a;
     Nodo * nuevo=malloc(sizeof(Nodo));
