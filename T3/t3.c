@@ -28,9 +28,9 @@ void desbalancear(Nodo **pa, Nodo **pult){
 
 Nodo *desbalanceado(Nodo *a, Nodo **pult){
     if (a==NULL){
-        Nodo *a= NULL;
         printf("soy nulo\n");
-        return a;
+        Nodo *nuevo=NULL
+        return nuevo;
     }
     Nodo *nodo_actual=a;
     Nodo * nuevo=malloc(sizeof(Nodo));
