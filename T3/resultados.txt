@@ -1,0 +1,257 @@
+	Resultados comando "make test-g"
+
+Primero se verifica desbalanceado porque es mas facil
+-----------------------------------------------------
+
+Verificando el arbol vacio
+Verificando arbol de un solo nodo
+Verificando arbol con un nodo raiz y un nodo derecho
+Verificando arbol con un nodo raiz y u nodo izquierdo
+Verificando ejemplo del enunciado
+
+Ahora se verifica desbalancear
+------------------------------
+
+Verificando el arbol vacio
+Verificando arbol de un solo nodo
+Verificando arbol con un nodo raiz y un nodo derecho
+Verificando arbol con un nodo raiz y u nodo izquierdo
+Verificando ejemplo del enunciado
+
+Tests aprobados
+
+Verificando un arbol de 100 mil nodos
+-------------------------------------
+
+Aprobado
+
+Benchmarks
+Tiempo de desbalanceado de 500 miles de nodos: 18740 usegs.
+Tiempo de desbalancear 500 miles de nodos: 6950 usegs.
+Aprobado
+Tiempo de desbalanceado de 1000 miles de nodos: 35715 usegs.
+Tiempo de desbalancear 1000 miles de nodos: 16873 usegs.
+Aprobado
+Tiempo de desbalanceado de 1500 miles de nodos: 57612 usegs.
+Tiempo de desbalancear 1500 miles de nodos: 33287 usegs.
+Aprobado
+Tiempo de desbalanceado de 2000 miles de nodos: 70076 usegs.
+Tiempo de desbalancear 2000 miles de nodos: 32498 usegs.
+Aprobado
+Tiempo de desbalanceado de 2500 miles de nodos: 94462 usegs.
+Tiempo de desbalancear 2500 miles de nodos: 39071 usegs.
+Aprobado
+Tiempo de desbalanceado de 3000 miles de nodos: 108113 usegs.
+Tiempo de desbalancear 3000 miles de nodos: 45216 usegs.
+Aprobado
+Tiempo de desbalanceado de 3500 miles de nodos: 116985 usegs.
+Tiempo de desbalancear 3500 miles de nodos: 58203 usegs.
+Aprobado
+Tiempo de desbalanceado de 4000 miles de nodos: 137914 usegs.
+Tiempo de desbalancear 4000 miles de nodos: 70948 usegs.
+Aprobado
+Tiempo de desbalanceado de 4500 miles de nodos: 160328 usegs.
+Tiempo de desbalancear 4500 miles de nodos: 71162 usegs.
+Aprobado
+Tiempo de desbalanceado de 5000 miles de nodos: 171665 usegs.
+Tiempo de desbalancear 5000 miles de nodos: 81413 usegs.
+Aprobado
+
+Grafico del tiempo de desbalanceado.  Debe ser +/- lineal.
+      *
+            *
+                    *
+                        *
+                                 *
+                                     *
+                                        *
+                                                *
+                                                        *
+                                                            *
+Grafico del tiempo de desbalancear.  Debe ser +/- lineal.
+  *
+     *
+           *
+           *
+             *
+               *
+                    *
+                        *
+                        *
+                            *
+
+(Deben ser menores que los de desbalanceado, pero no se exige.)
+Felicitaciones paso todos los tests
+
+
+
+	Resultados Comando "make test-O"
+
+Primero se verifica desbalanceado porque es mas facil
+-----------------------------------------------------
+
+Verificando el arbol vacio
+Verificando arbol de un solo nodo
+Verificando arbol con un nodo raiz y un nodo derecho
+Verificando arbol con un nodo raiz y u nodo izquierdo
+Verificando ejemplo del enunciado
+
+Ahora se verifica desbalancear
+------------------------------
+
+Verificando el arbol vacio
+Verificando arbol de un solo nodo
+Verificando arbol con un nodo raiz y un nodo derecho
+Verificando arbol con un nodo raiz y u nodo izquierdo
+Verificando ejemplo del enunciado
+
+Tests aprobados
+
+Verificando un arbol de 100 mil nodos
+-------------------------------------
+
+Aprobado
+
+Benchmarks
+Tiempo de desbalanceado de 500 miles de nodos: 26759 usegs.
+Tiempo de desbalancear 500 miles de nodos: 9978 usegs.
+Aprobado
+Tiempo de desbalanceado de 1000 miles de nodos: 43694 usegs.
+Tiempo de desbalancear 1000 miles de nodos: 12109 usegs.
+Aprobado
+Tiempo de desbalanceado de 1500 miles de nodos: 51668 usegs.
+Tiempo de desbalancear 1500 miles de nodos: 18189 usegs.
+Aprobado
+Tiempo de desbalanceado de 2000 miles de nodos: 65476 usegs.
+Tiempo de desbalancear 2000 miles de nodos: 24085 usegs.
+Aprobado
+Tiempo de desbalanceado de 2500 miles de nodos: 75804 usegs.
+Tiempo de desbalancear 2500 miles de nodos: 30786 usegs.
+Aprobado
+Tiempo de desbalanceado de 3000 miles de nodos: 94787 usegs.
+Tiempo de desbalancear 3000 miles de nodos: 33581 usegs.
+Aprobado
+Tiempo de desbalanceado de 3500 miles de nodos: 113839 usegs.
+Tiempo de desbalancear 3500 miles de nodos: 39571 usegs.
+Aprobado
+Tiempo de desbalanceado de 4000 miles de nodos: 127005 usegs.
+Tiempo de desbalancear 4000 miles de nodos: 45549 usegs.
+Aprobado
+Tiempo de desbalanceado de 4500 miles de nodos: 136325 usegs.
+Tiempo de desbalancear 4500 miles de nodos: 51636 usegs.
+Aprobado
+Tiempo de desbalanceado de 5000 miles de nodos: 165249 usegs.
+Tiempo de desbalancear 5000 miles de nodos: 58031 usegs.
+Aprobado
+
+Grafico del tiempo de desbalanceado.  Debe ser +/- lineal.
+         *
+               *
+                  *
+                       *
+                           *
+                                  *
+                                         *
+                                              *
+                                                 *
+                                                            *
+Grafico del tiempo de desbalancear.  Debe ser +/- lineal.
+   *
+    *
+      *
+        *
+           *
+            *
+              *
+                *
+                  *
+                     *
+
+(Deben ser menores que los de desbalanceado, pero no se exige.)
+Felicitaciones paso todos los tests
+
+
+	Resultados comando "make test-O-m32"
+
+Primero se verifica desbalanceado porque es mas facil
+-----------------------------------------------------
+
+Verificando el arbol vacio
+Verificando arbol de un solo nodo
+Verificando arbol con un nodo raiz y un nodo derecho
+Verificando arbol con un nodo raiz y u nodo izquierdo
+Verificando ejemplo del enunciado
+
+Ahora se verifica desbalancear
+------------------------------
+
+Verificando el arbol vacio
+Verificando arbol de un solo nodo
+Verificando arbol con un nodo raiz y un nodo derecho
+Verificando arbol con un nodo raiz y u nodo izquierdo
+Verificando ejemplo del enunciado
+
+Tests aprobados
+
+Verificando un arbol de 100 mil nodos
+-------------------------------------
+
+Aprobado
+
+Benchmarks
+Tiempo de desbalanceado de 500 miles de nodos: 23000 usegs.
+Tiempo de desbalancear 500 miles de nodos: 11587 usegs.
+Aprobado
+Tiempo de desbalanceado de 1000 miles de nodos: 41894 usegs.
+Tiempo de desbalancear 1000 miles de nodos: 39400 usegs.
+Aprobado
+Tiempo de desbalanceado de 1500 miles de nodos: 61004 usegs.
+Tiempo de desbalancear 1500 miles de nodos: 30273 usegs.
+Aprobado
+Tiempo de desbalanceado de 2000 miles de nodos: 70814 usegs.
+Tiempo de desbalancear 2000 miles de nodos: 27993 usegs.
+Aprobado
+Tiempo de desbalanceado de 2500 miles de nodos: 95481 usegs.
+Tiempo de desbalancear 2500 miles de nodos: 33812 usegs.
+Aprobado
+Tiempo de desbalanceado de 3000 miles de nodos: 122083 usegs.
+Tiempo de desbalancear 3000 miles de nodos: 37611 usegs.
+Aprobado
+Tiempo de desbalanceado de 3500 miles de nodos: 146281 usegs.
+Tiempo de desbalancear 3500 miles de nodos: 46129 usegs.
+Aprobado
+Tiempo de desbalanceado de 4000 miles de nodos: 152482 usegs.
+Tiempo de desbalancear 4000 miles de nodos: 51407 usegs.
+Aprobado
+Tiempo de desbalanceado de 4500 miles de nodos: 174209 usegs.
+Tiempo de desbalancear 4500 miles de nodos: 65172 usegs.
+Aprobado
+Tiempo de desbalanceado de 5000 miles de nodos: 199341 usegs.
+Tiempo de desbalancear 5000 miles de nodos: 67849 usegs.
+Aprobado
+
+Grafico del tiempo de desbalanceado.  Debe ser +/- lineal.
+      *
+            *
+                  *
+                     *
+                            *
+                                    *
+                                            *
+                                             *
+                                                    *
+                                                            *
+Grafico del tiempo de desbalancear.  Debe ser +/- lineal.
+   *
+           *
+         *
+        *
+          *
+           *
+             *
+               *
+                   *
+                    *
+
+(Deben ser menores que los de desbalanceado, pero no se exige.)
+Felicitaciones paso todos los tests
