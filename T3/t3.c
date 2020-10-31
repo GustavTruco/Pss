@@ -4,6 +4,9 @@
 #include "t3.h"
 
 void desbalancear(Nodo **pa, Nodo **pult){
+    if (*pa==NULL){
+        return;
+    }
     Nodo *nodo_actual=*pa;
     if (nodo_actual->izq==NULL && nodo_actual->der==NULL){
         *pult=nodo_actual;
