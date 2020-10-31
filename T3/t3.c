@@ -50,8 +50,6 @@ Nodo *desbalanceado(Nodo *a, Nodo **pult){
         }
         return nuevo2;
     }
-    }
-
     if (nodo_actual->der!=NULL){
         nuevo->der=desbalanceado((nodo_actual->der),pult);
     }
