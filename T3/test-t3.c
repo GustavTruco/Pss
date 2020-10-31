@@ -170,8 +170,6 @@ int main() {
     Nodo *a= NULL;
     Nodo *ult;
     Nodo *des= desbalanceado(a, &ult);
-    printf((des==NULL) ? "YES" : "NO");
-    printf("Verificando el arbol vacio\n");
     comparar(des, NULL);
     comparar(ult, NULL);
   }
