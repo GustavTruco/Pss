@@ -5,11 +5,11 @@
 
 void desbalancear(Nodo **pa, Nodo **pult){
     Nodo *nodo_actual=*pa;
-    if (nodo_actual->izq==NULL and a->der==NULL){
+    if (nodo_actual->izq==NULL and nodo_actual->der==NULL){
         *pult=nodo_actual;
         return;
     }
-    if (a->izq!=NULL){
+    if (nodo_actual->izq!=NULL){
         desbalancear(&(nodo_actual->izq),pult);
 
         Nodo *aux=nodo_actual->izq;
