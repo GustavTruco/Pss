@@ -31,7 +31,7 @@ Nodo *desbalanceado(Nodo *a, Nodo **pult){
         return NULL;
     }
     Nodo *nodo_actual=a;
-    Nodo * nuevo=malloc(sizeof(struct Nodo));
+    Nodo * nuevo=malloc(sizeof(Nodo));
     nuevo->id=nodo_actual->id;
     nuevo->hash=nodo_actual->hash;
     nuevo->der=NULL;
