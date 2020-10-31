@@ -14,7 +14,7 @@ void desbalancear(Nodo **pa, Nodo **pult){
 
         Nodo *aux=nodo_actual->izq;
         while (aux->der!=NULL){
-            *aux=aux->der;
+            aux=aux->der;
         }
         nodo_actual->izq=NULL;
         aux->der=nodo_actual;
