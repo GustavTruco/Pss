@@ -161,7 +161,7 @@ static Nodo nuref= { 'u', 0, NULL, &nvref };
 static Nodo nsref= { 's', 0, NULL, &nuref };
 
 int main() {
-  /**
+  
   printf("Primero se verifica desbalanceado porque es mas facil\n");
   printf("-----------------------------------------------------\n\n");
 
@@ -215,7 +215,6 @@ int main() {
     liberar(a); liberar(des);
   }
 
-  */
   printf("\nAhora se verifica desbalancear\n");
   printf(  "------------------------------\n\n");
 
@@ -277,13 +276,11 @@ int main() {
     Nodo *a= equilibrado(1, n);
     Nodo *ref= copia(a);
     Nodo *ult;
-    /**
     Nodo *des= desbalanceado(a, &ult);
     verificar_des(des, n, ult);
     liberar_des(des);
     comparar(a, ref);
     liberar(ref);
-    */
     desbalancear(&a, &ult);
     verificar_des(a, n, ult);
     Nodo *b= a;

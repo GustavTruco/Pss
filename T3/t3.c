@@ -28,6 +28,29 @@ void desbalancear(Nodo **pa, Nodo **pult){
 
 Nodo *desbalanceado(Nodo *a, Nodo **pult){
     Nodo nxref= { 'x', 0, NULL, NULL };
-    Nodo *p= &nxref;
-    return p;
+    if (*pa==NULL){
+        return NULL;
+    }
+    Nodo *nodo_actual=*pa;
+    Nodo * nuevo=malloc(sizeof Nodo);
+    nuevo->id=nodo_actual->id;
+    nuevo->hash=nodo_actual->hash;
+    nuevo->der=NULL;
+    nuevo->izq=NULL;
+
+    if (nodo_actual->izq==NULL && nodo_actual->der==NULL){
+        *pult=nuevo;
+        return nuevo;
+    }
+    if (nodo_actual->izq!=NULL){
+        *pa=desbalanceado(&(nodo_actual->izq),pult);
+        (*pult)->der=nuevo;
+        *pult=nodo_actual;
+    }
+
+    if (nodo_actual->der!=NULL){
+        nuevo->der=desbalanceado(&(nodo_actual->der),pult);
+    }
+
+    return nuevo;
 }
