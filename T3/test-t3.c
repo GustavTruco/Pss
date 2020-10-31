@@ -170,6 +170,7 @@ int main() {
     Nodo *a= NULL;
     Nodo *ult;
     Nodo *des= desbalanceado(a, &ult);
+    printf((des==NULL) ? "YES" : "NO");
     comparar(des, NULL);
     comparar(ult, NULL);
   }
