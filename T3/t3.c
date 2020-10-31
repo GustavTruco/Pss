@@ -5,7 +5,7 @@
 
 void desbalancear(Nodo **pa, Nodo **pult){
     if (*pa==NULL){
-        *pult=NULL
+        *pult=NULL;
         return;
     }
 
