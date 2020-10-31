@@ -161,17 +161,18 @@ static Nodo nuref= { 'u', 0, NULL, &nvref };
 static Nodo nsref= { 's', 0, NULL, &nuref };
 
 int main() {
-  
+
   printf("Primero se verifica desbalanceado porque es mas facil\n");
   printf("-----------------------------------------------------\n\n");
 
-  {
+  {/**
     printf("Verificando el arbol vacio\n");
     Nodo *a= NULL;
     Nodo *ult;
     Nodo *des= desbalanceado(a, &ult);
     comparar(des, NULL);
     comparar(ult, NULL);
+    */
   }
 
   {
