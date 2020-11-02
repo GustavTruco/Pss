@@ -1,3 +1,4 @@
+	
 	Resultados comando "make test-g"
 
 Primero se verifica desbalanceado porque es mas facil

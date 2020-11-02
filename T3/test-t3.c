@@ -55,7 +55,7 @@ static void comparar(Nodo *a, Nodo *b) {
       exit(1);
     }
     comparar(a->izq, b->izq);
-    comparar(b->der, b->der);
+    comparar(a->der, b->der);
   }
 }
 
