@@ -1,0 +1,188 @@
+			Comando "make test-g"
+
+make clean
+make[1]: se entra en el directorio '/home/pss/Documentos/Pss/Pss/T4'
+rm -f *.o compactar
+make[1]: se sale del directorio '/home/pss/Documentos/Pss/Pss/T4'
+make
+make[1]: se entra en el directorio '/home/pss/Documentos/Pss/Pss/T4'
+gcc -g -Wall -pedantic -std=c99 -o compactar compactar.c
+make[1]: se sale del directorio '/home/pss/Documentos/Pss/Pss/T4'
+./verificar compactar dicc-orig.txt dicc.txt dicc-out.txt
+# Archivo de entrada
+$ cat dicc.txt
+123456789:123456789
+perro:guau         
+gato:miau          
+                   
+vaca:muuu          
+                   
+lobo:auuu          
+                   
+$ ./compactar dicc.txt
+# Archivo de salida
+$ cat dicc.txt
+123456789:123456789
+perro:guau         
+gato:miau          
+vaca:muuu          
+lobo:auuu          
+                   
+                   
+                   
+# Felicitaciones: test aprobado
+./verificar compactar dicc2-orig.txt dicc2.txt dicc2-out.txt
+# Archivo de entrada
+$ cat dicc2.txt
+                   
+                   
+                   
+123456789:123456789
+perro:guau         
+                   
+gato:miau          
+vaca:muuu          
+                   
+lobo:auuu          
+                   
+pollo:pio pio      
+                   
+                   
+oveja:beeeee       
+pato:cuac cuac     
+$ ./compactar dicc2.txt
+# Archivo de salida
+$ cat dicc2.txt
+123456789:123456789
+perro:guau         
+gato:miau          
+vaca:muuu          
+lobo:auuu          
+pollo:pio pio      
+oveja:beeeee       
+pato:cuac cuac     
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+# Felicitaciones: test aprobado
+
+			Comando "make test-O"
+
+make clean
+make[1]: se entra en el directorio '/home/pss/Documentos/Pss/Pss/T4'
+rm -f *.o compactar
+make[1]: se sale del directorio '/home/pss/Documentos/Pss/Pss/T4'
+make "CFLAGS=-O -Wall -pedantic -std=c99"
+make[1]: se entra en el directorio '/home/pss/Documentos/Pss/Pss/T4'
+gcc -O -Wall -pedantic -std=c99 -o compactar compactar.c
+make[1]: se sale del directorio '/home/pss/Documentos/Pss/Pss/T4'
+./verificar compactar dicc2-orig.txt dicc.txt dicc2-out.txt
+# Archivo de entrada
+$ cat dicc.txt
+                   
+                   
+                   
+123456789:123456789
+perro:guau         
+                   
+gato:miau          
+vaca:muuu          
+                   
+lobo:auuu          
+                   
+pollo:pio pio      
+                   
+                   
+oveja:beeeee       
+pato:cuac cuac     
+$ ./compactar dicc.txt
+# Archivo de salida
+$ cat dicc.txt
+123456789:123456789
+perro:guau         
+gato:miau          
+vaca:muuu          
+lobo:auuu          
+pollo:pio pio      
+oveja:beeeee       
+pato:cuac cuac     
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+# Felicitaciones: test aprobado
+
+			Comando " make test-O-m32"
+
+make clean
+make[1]: se entra en el directorio '/home/pss/Documentos/Pss/Pss/T4'
+rm -f *.o compactar
+make[1]: se sale del directorio '/home/pss/Documentos/Pss/Pss/T4'
+make "CFLAGS=-O -m32 -Wall -pedantic -std=c99" "LDFLAGS=-m32"
+make[1]: se entra en el directorio '/home/pss/Documentos/Pss/Pss/T4'
+gcc -O -m32 -Wall -pedantic -std=c99 -o compactar compactar.c
+make[1]: se sale del directorio '/home/pss/Documentos/Pss/Pss/T4'
+./verificar compactar dicc-orig.txt dicc.txt dicc-out.txt
+# Archivo de entrada
+$ cat dicc.txt
+123456789:123456789
+perro:guau         
+gato:miau          
+                   
+vaca:muuu          
+                   
+lobo:auuu          
+                   
+$ ./compactar dicc.txt
+# Archivo de salida
+$ cat dicc.txt
+123456789:123456789
+perro:guau         
+gato:miau          
+vaca:muuu          
+lobo:auuu          
+                   
+                   
+                   
+# Felicitaciones: test aprobado
+
+			Comando "make test-valgrind"
+
+make clean
+make[1]: se entra en el directorio '/home/pss/Documentos/Pss/Pss/T4'
+rm -f *.o compactar
+make[1]: se sale del directorio '/home/pss/Documentos/Pss/Pss/T4'
+make CFLAGS="-g -Wall -pedantic -std=c99"
+make[1]: se entra en el directorio '/home/pss/Documentos/Pss/Pss/T4'
+gcc -g -Wall -pedantic -std=c99 -o compactar compactar.c
+make[1]: se sale del directorio '/home/pss/Documentos/Pss/Pss/T4'
+cp dicc2-orig.txt dicc2.txt
+bash -c 'valgrind ./compactar dicc2.txt |& tee run.log'
+==1388== Memcheck, a memory error detector
+==1388== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1388== Using Valgrind-3.14.0 and LibVEX; rerun with -h for copyright info
+==1388== Command: ./compactar dicc2.txt
+==1388== 
+==1388== 
+==1388== HEAP SUMMARY:
+==1388==     in use at exit: 0 bytes in 0 blocks
+==1388==   total heap usage: 2 allocs, 2 frees, 4,648 bytes allocated
+==1388== 
+==1388== All heap blocks were freed -- no leaks are possible
+==1388== 
+==1388== For counts of detected and suppressed errors, rerun with: -v
+==1388== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+cmp dicc2.txt dicc2-out.txt
+echo
+
+echo "Examine el reporte de valgrind en el archivo run.log"
+Examine el reporte de valgrind en el archivo run.log
