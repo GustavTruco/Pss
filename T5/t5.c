@@ -48,8 +48,8 @@ double llenarMaletaPar(double w[], double v[], int z[], int n, double maxW, int 
         for (int j=0;j<n;j++){
         z[j]=maleta[i].z[j];
         }
-        free(maleta[i].z);
     }
+    free(maleta[i].z);
     }
   return best;
 }
