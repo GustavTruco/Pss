@@ -36,8 +36,7 @@ double llenarMaletaPar(double w[], double v[], int z[], int n, double maxW, int 
     maleta[i].n=n;
     maleta[i].maxW=maxW;
     maleta[i].k=k/8;
-    int * z_i=malloc(n*sizeof(int));
-    maleta[i].z=z_i;
+    maleta[i].z=malloc(n*sizeof(int));
     pthread_create(&t[i],NULL,thread_function,&maleta[i]);
   }
 
