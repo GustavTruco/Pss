@@ -36,8 +36,7 @@ double llenarMaletaPar(double w[], double v[], int z[], int n, double maxW, int 
     maleta[i].n=n;
     maleta[i].maxW=maxW;
     maleta[i].k=k/8;
-    int * memory =malloc(n*sizeof(int));
-    int * z_i= memory;
+    int * z_i=malloc(n*sizeof(int));
     maleta[i].z=z_i;
     pthread_create(&t[i],NULL,thread_function,&maleta[i]);
   }
@@ -50,6 +49,7 @@ double llenarMaletaPar(double w[], double v[], int z[], int n, double maxW, int 
         for (int j=0;j<n;j++){
         z[j]=maleta[i].z[j];
         }
+        free(maleta[i].z);
     }
     }
   return best;
