@@ -1,4 +1,8 @@
+#include <stdio.h>
+#include <stdlib.h>
 #include "p3.h"
+
+/* Pasa el test de enunciado*/
 
 void elimRep(char *s) {
   char *w=s;
@@ -6,7 +10,12 @@ void elimRep(char *s) {
 	char *p=s+1;
 
   while (*w){
-    if (*r==*p){
+    if (*r==*""){
+      *w=*r;
+      w++;
+      r++;
+    }
+    else if (*r==*p){
       r++;
       p++;
     }
