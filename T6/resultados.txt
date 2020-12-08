@@ -1,0 +1,765 @@
+		Comando "make test-g"
+
+make clean
+make[1]: se entra en el directorio '/home/pss/Documentos/Pss/Pss/T6'
+rm -f *.o
+rm -f test-t6
+make[1]: se sale del directorio '/home/pss/Documentos/Pss/Pss/T6'
+make
+make[1]: se entra en el directorio '/home/pss/Documentos/Pss/Pss/T6'
+cc -g -Wall -pedantic -std=c99   -c -o test-t6.o test-t6.c
+cc -g -Wall -pedantic -std=c99   -c -o t6.o t6.c
+cc -g  test-t6.o t6.o  -lpthread -o test-t6
+make[1]: se sale del directorio '/home/pss/Documentos/Pss/Pss/T6'
+./test-t6
+
+----------------------------------------
+Iniciando: thread principal obtiene el recurso
+2 threads solicitaran el recurso
+Thread 0 solicita recurso
+
+<<< Thread principal desocupa el recurso >>>
+
+Thread 0 obtiene recurso
+Thread 1 solicita recurso
+Thread 1 obtiene recurso
+Bien.  Se respeto orden de llegada.
+
+----------------------------------------
+Iniciando: thread principal obtiene el recurso
+5 threads solicitaran el recurso
+Thread 0 solicita recurso
+Thread 1 solicita recurso
+Thread 2 solicita recurso
+Thread 3 solicita recurso
+
+<<< Thread principal desocupa el recurso >>>
+
+Thread 0 obtiene recurso
+Thread 4 solicita recurso
+Thread 1 obtiene recurso
+Thread 2 obtiene recurso
+Thread 3 obtiene recurso
+Thread 4 obtiene recurso
+Bien.  Se respeto orden de llegada.
+
+----------------------------------------
+Iniciando: thread principal obtiene el recurso
+10 threads solicitaran el recurso
+Thread 0 solicita recurso
+Thread 1 solicita recurso
+Thread 2 solicita recurso
+Thread 3 solicita recurso
+Thread 4 solicita recurso
+Thread 5 solicita recurso
+Thread 6 solicita recurso
+Thread 7 solicita recurso
+Thread 8 solicita recurso
+
+<<< Thread principal desocupa el recurso >>>
+
+Thread 9 solicita recurso
+Thread 0 obtiene recurso
+Thread 1 obtiene recurso
+Thread 2 obtiene recurso
+Thread 3 obtiene recurso
+Thread 4 obtiene recurso
+Thread 5 obtiene recurso
+Thread 6 obtiene recurso
+Thread 7 obtiene recurso
+Thread 8 obtiene recurso
+Thread 9 obtiene recurso
+Bien.  Se respeto orden de llegada.
+
+----------------------------------------
+Iniciando: thread principal obtiene el recurso
+20 threads solicitaran el recurso
+Thread 0 solicita recurso
+Thread 1 solicita recurso
+Thread 2 solicita recurso
+Thread 3 solicita recurso
+Thread 4 solicita recurso
+Thread 5 solicita recurso
+Thread 6 solicita recurso
+Thread 7 solicita recurso
+Thread 8 solicita recurso
+Thread 9 solicita recurso
+Thread 10 solicita recurso
+Thread 11 solicita recurso
+Thread 12 solicita recurso
+Thread 13 solicita recurso
+Thread 14 solicita recurso
+Thread 15 solicita recurso
+Thread 16 solicita recurso
+Thread 17 solicita recurso
+Thread 18 solicita recurso
+
+<<< Thread principal desocupa el recurso >>>
+
+Thread 0 obtiene recurso
+Thread 1 obtiene recurso
+Thread 2 obtiene recurso
+Thread 19 solicita recurso
+Thread 3 obtiene recurso
+Thread 4 obtiene recurso
+Thread 5 obtiene recurso
+Thread 6 obtiene recurso
+Thread 7 obtiene recurso
+Thread 8 obtiene recurso
+Thread 9 obtiene recurso
+Thread 10 obtiene recurso
+Thread 11 obtiene recurso
+Thread 12 obtiene recurso
+Thread 13 obtiene recurso
+Thread 14 obtiene recurso
+Thread 15 obtiene recurso
+Thread 16 obtiene recurso
+Thread 17 obtiene recurso
+Thread 18 obtiene recurso
+Thread 19 obtiene recurso
+Bien.  Se respeto orden de llegada.
+
+----------------------------------------
+Iniciando: thread principal obtiene el recurso
+30 threads solicitaran el recurso
+Thread 0 solicita recurso
+Thread 1 solicita recurso
+Thread 2 solicita recurso
+Thread 3 solicita recurso
+Thread 4 solicita recurso
+Thread 5 solicita recurso
+Thread 6 solicita recurso
+Thread 7 solicita recurso
+Thread 8 solicita recurso
+Thread 9 solicita recurso
+Thread 10 solicita recurso
+Thread 11 solicita recurso
+Thread 12 solicita recurso
+Thread 13 solicita recurso
+Thread 14 solicita recurso
+Thread 15 solicita recurso
+Thread 16 solicita recurso
+Thread 17 solicita recurso
+Thread 18 solicita recurso
+Thread 19 solicita recurso
+Thread 20 solicita recurso
+Thread 21 solicita recurso
+Thread 22 solicita recurso
+Thread 23 solicita recurso
+Thread 24 solicita recurso
+Thread 25 solicita recurso
+Thread 26 solicita recurso
+Thread 27 solicita recurso
+Thread 28 solicita recurso
+
+<<< Thread principal desocupa el recurso >>>
+
+Thread 0 obtiene recurso
+Thread 29 solicita recurso
+Thread 1 obtiene recurso
+Thread 2 obtiene recurso
+Thread 3 obtiene recurso
+Thread 4 obtiene recurso
+Thread 5 obtiene recurso
+Thread 6 obtiene recurso
+Thread 7 obtiene recurso
+Thread 8 obtiene recurso
+Thread 9 obtiene recurso
+Thread 10 obtiene recurso
+Thread 11 obtiene recurso
+Thread 12 obtiene recurso
+Thread 13 obtiene recurso
+Thread 14 obtiene recurso
+Thread 15 obtiene recurso
+Thread 16 obtiene recurso
+Thread 17 obtiene recurso
+Thread 18 obtiene recurso
+Thread 19 obtiene recurso
+Thread 20 obtiene recurso
+Thread 21 obtiene recurso
+Thread 22 obtiene recurso
+Thread 23 obtiene recurso
+Thread 24 obtiene recurso
+Thread 25 obtiene recurso
+Thread 26 obtiene recurso
+Thread 27 obtiene recurso
+Thread 28 obtiene recurso
+Thread 29 obtiene recurso
+Bien.  Se respeto orden de llegada.
+Felicitaciones: su tarea funciona.  Los threads
+siempre fueron atendidos por orden de llegada.
+
+
+		Comando "make test-O"
+
+make clean
+make[1]: se entra en el directorio '/home/pss/Documentos/Pss/Pss/T6'
+rm -f *.o
+rm -f test-t6
+make[1]: se sale del directorio '/home/pss/Documentos/Pss/Pss/T6'
+make "CFLAGS= -O -Wall -pedantic -std=c99" LDFLAGS=
+make[1]: se entra en el directorio '/home/pss/Documentos/Pss/Pss/T6'
+cc -O -Wall -pedantic -std=c99   -c -o test-t6.o test-t6.c
+cc -O -Wall -pedantic -std=c99   -c -o t6.o t6.c
+cc   test-t6.o t6.o  -lpthread -o test-t6
+make[1]: se sale del directorio '/home/pss/Documentos/Pss/Pss/T6'
+./test-t6
+
+----------------------------------------
+Iniciando: thread principal obtiene el recurso
+2 threads solicitaran el recurso
+Thread 0 solicita recurso
+
+<<< Thread principal desocupa el recurso >>>
+
+Thread 1 solicita recurso
+Thread 0 obtiene recurso
+Thread 1 obtiene recurso
+Bien.  Se respeto orden de llegada.
+
+----------------------------------------
+Iniciando: thread principal obtiene el recurso
+5 threads solicitaran el recurso
+Thread 0 solicita recurso
+Thread 1 solicita recurso
+Thread 2 solicita recurso
+Thread 3 solicita recurso
+
+<<< Thread principal desocupa el recurso >>>
+
+Thread 0 obtiene recurso
+Thread 1 obtiene recurso
+Thread 2 obtiene recurso
+Thread 3 obtiene recurso
+Thread 4 solicita recurso
+Thread 4 obtiene recurso
+Bien.  Se respeto orden de llegada.
+
+----------------------------------------
+Iniciando: thread principal obtiene el recurso
+10 threads solicitaran el recurso
+Thread 0 solicita recurso
+Thread 1 solicita recurso
+Thread 2 solicita recurso
+Thread 3 solicita recurso
+Thread 4 solicita recurso
+Thread 5 solicita recurso
+Thread 6 solicita recurso
+Thread 7 solicita recurso
+Thread 8 solicita recurso
+
+<<< Thread principal desocupa el recurso >>>
+
+Thread 0 obtiene recurso
+Thread 9 solicita recurso
+Thread 1 obtiene recurso
+Thread 2 obtiene recurso
+Thread 3 obtiene recurso
+Thread 4 obtiene recurso
+Thread 5 obtiene recurso
+Thread 6 obtiene recurso
+Thread 7 obtiene recurso
+Thread 8 obtiene recurso
+Thread 9 obtiene recurso
+Bien.  Se respeto orden de llegada.
+
+----------------------------------------
+Iniciando: thread principal obtiene el recurso
+20 threads solicitaran el recurso
+Thread 0 solicita recurso
+Thread 1 solicita recurso
+Thread 2 solicita recurso
+Thread 3 solicita recurso
+Thread 4 solicita recurso
+Thread 5 solicita recurso
+Thread 6 solicita recurso
+Thread 7 solicita recurso
+Thread 8 solicita recurso
+Thread 9 solicita recurso
+Thread 10 solicita recurso
+Thread 11 solicita recurso
+Thread 12 solicita recurso
+Thread 13 solicita recurso
+Thread 14 solicita recurso
+Thread 15 solicita recurso
+Thread 16 solicita recurso
+Thread 17 solicita recurso
+Thread 18 solicita recurso
+
+<<< Thread principal desocupa el recurso >>>
+
+Thread 0 obtiene recurso
+Thread 19 solicita recurso
+Thread 1 obtiene recurso
+Thread 2 obtiene recurso
+Thread 3 obtiene recurso
+Thread 4 obtiene recurso
+Thread 5 obtiene recurso
+Thread 6 obtiene recurso
+Thread 7 obtiene recurso
+Thread 8 obtiene recurso
+Thread 9 obtiene recurso
+Thread 10 obtiene recurso
+Thread 11 obtiene recurso
+Thread 12 obtiene recurso
+Thread 13 obtiene recurso
+Thread 14 obtiene recurso
+Thread 15 obtiene recurso
+Thread 16 obtiene recurso
+Thread 17 obtiene recurso
+Thread 18 obtiene recurso
+Thread 19 obtiene recurso
+Bien.  Se respeto orden de llegada.
+
+----------------------------------------
+Iniciando: thread principal obtiene el recurso
+30 threads solicitaran el recurso
+Thread 0 solicita recurso
+Thread 1 solicita recurso
+Thread 2 solicita recurso
+Thread 3 solicita recurso
+Thread 4 solicita recurso
+Thread 5 solicita recurso
+Thread 6 solicita recurso
+Thread 7 solicita recurso
+Thread 8 solicita recurso
+Thread 9 solicita recurso
+Thread 10 solicita recurso
+Thread 11 solicita recurso
+Thread 12 solicita recurso
+Thread 13 solicita recurso
+Thread 14 solicita recurso
+Thread 15 solicita recurso
+Thread 16 solicita recurso
+Thread 17 solicita recurso
+Thread 18 solicita recurso
+Thread 19 solicita recurso
+Thread 20 solicita recurso
+Thread 21 solicita recurso
+Thread 22 solicita recurso
+Thread 23 solicita recurso
+Thread 24 solicita recurso
+Thread 25 solicita recurso
+Thread 26 solicita recurso
+Thread 27 solicita recurso
+Thread 28 solicita recurso
+
+<<< Thread principal desocupa el recurso >>>
+
+Thread 29 solicita recurso
+Thread 0 obtiene recurso
+Thread 1 obtiene recurso
+Thread 2 obtiene recurso
+Thread 3 obtiene recurso
+Thread 4 obtiene recurso
+Thread 5 obtiene recurso
+Thread 6 obtiene recurso
+Thread 7 obtiene recurso
+Thread 8 obtiene recurso
+Thread 9 obtiene recurso
+Thread 10 obtiene recurso
+Thread 11 obtiene recurso
+Thread 12 obtiene recurso
+Thread 13 obtiene recurso
+Thread 14 obtiene recurso
+Thread 15 obtiene recurso
+Thread 16 obtiene recurso
+Thread 17 obtiene recurso
+Thread 18 obtiene recurso
+Thread 19 obtiene recurso
+Thread 20 obtiene recurso
+Thread 21 obtiene recurso
+Thread 22 obtiene recurso
+Thread 23 obtiene recurso
+Thread 24 obtiene recurso
+Thread 25 obtiene recurso
+Thread 26 obtiene recurso
+Thread 27 obtiene recurso
+Thread 28 obtiene recurso
+Thread 29 obtiene recurso
+Bien.  Se respeto orden de llegada.
+Felicitaciones: su tarea funciona.  Los threads
+siempre fueron atendidos por orden de llegada.
+
+		Comando "make test-O-m32"
+
+make clean
+make[1]: se entra en el directorio '/home/pss/Documentos/Pss/Pss/T6'
+rm -f *.o
+rm -f test-t6
+make[1]: se sale del directorio '/home/pss/Documentos/Pss/Pss/T6'
+make "CFLAGS= -m32 -O -Wall -pedantic -std=c99" "LDFLAGS=-m32"
+make[1]: se entra en el directorio '/home/pss/Documentos/Pss/Pss/T6'
+cc -m32 -O -Wall -pedantic -std=c99   -c -o test-t6.o test-t6.c
+cc -m32 -O -Wall -pedantic -std=c99   -c -o t6.o t6.c
+cc -m32  test-t6.o t6.o  -lpthread -o test-t6
+make[1]: se sale del directorio '/home/pss/Documentos/Pss/Pss/T6'
+./test-t6
+
+----------------------------------------
+Iniciando: thread principal obtiene el recurso
+2 threads solicitaran el recurso
+Thread 0 solicita recurso
+
+<<< Thread principal desocupa el recurso >>>
+
+Thread 0 obtiene recurso
+Thread 1 solicita recurso
+Thread 1 obtiene recurso
+Bien.  Se respeto orden de llegada.
+
+----------------------------------------
+Iniciando: thread principal obtiene el recurso
+5 threads solicitaran el recurso
+Thread 0 solicita recurso
+Thread 1 solicita recurso
+Thread 2 solicita recurso
+Thread 3 solicita recurso
+
+<<< Thread principal desocupa el recurso >>>
+
+Thread 4 solicita recurso
+Thread 0 obtiene recurso
+Thread 1 obtiene recurso
+Thread 2 obtiene recurso
+Thread 3 obtiene recurso
+Thread 4 obtiene recurso
+Bien.  Se respeto orden de llegada.
+
+----------------------------------------
+Iniciando: thread principal obtiene el recurso
+10 threads solicitaran el recurso
+Thread 0 solicita recurso
+Thread 1 solicita recurso
+Thread 2 solicita recurso
+Thread 3 solicita recurso
+Thread 4 solicita recurso
+Thread 5 solicita recurso
+Thread 6 solicita recurso
+Thread 7 solicita recurso
+Thread 8 solicita recurso
+
+<<< Thread principal desocupa el recurso >>>
+
+Thread 0 obtiene recurso
+Thread 1 obtiene recurso
+Thread 2 obtiene recurso
+Thread 3 obtiene recurso
+Thread 4 obtiene recurso
+Thread 5 obtiene recurso
+Thread 6 obtiene recurso
+Thread 7 obtiene recurso
+Thread 8 obtiene recurso
+Thread 9 solicita recurso
+Thread 9 obtiene recurso
+Bien.  Se respeto orden de llegada.
+
+----------------------------------------
+Iniciando: thread principal obtiene el recurso
+20 threads solicitaran el recurso
+Thread 0 solicita recurso
+Thread 1 solicita recurso
+Thread 2 solicita recurso
+Thread 3 solicita recurso
+Thread 4 solicita recurso
+Thread 5 solicita recurso
+Thread 6 solicita recurso
+Thread 7 solicita recurso
+Thread 8 solicita recurso
+Thread 9 solicita recurso
+Thread 10 solicita recurso
+Thread 11 solicita recurso
+Thread 12 solicita recurso
+Thread 13 solicita recurso
+Thread 14 solicita recurso
+Thread 15 solicita recurso
+Thread 16 solicita recurso
+Thread 17 solicita recurso
+Thread 18 solicita recurso
+
+<<< Thread principal desocupa el recurso >>>
+
+Thread 0 obtiene recurso
+Thread 1 obtiene recurso
+Thread 19 solicita recurso
+Thread 2 obtiene recurso
+Thread 3 obtiene recurso
+Thread 4 obtiene recurso
+Thread 5 obtiene recurso
+Thread 6 obtiene recurso
+Thread 7 obtiene recurso
+Thread 8 obtiene recurso
+Thread 9 obtiene recurso
+Thread 10 obtiene recurso
+Thread 11 obtiene recurso
+Thread 12 obtiene recurso
+Thread 13 obtiene recurso
+Thread 14 obtiene recurso
+Thread 15 obtiene recurso
+Thread 16 obtiene recurso
+Thread 17 obtiene recurso
+Thread 18 obtiene recurso
+Thread 19 obtiene recurso
+Bien.  Se respeto orden de llegada.
+
+----------------------------------------
+Iniciando: thread principal obtiene el recurso
+30 threads solicitaran el recurso
+Thread 0 solicita recurso
+Thread 1 solicita recurso
+Thread 2 solicita recurso
+Thread 3 solicita recurso
+Thread 4 solicita recurso
+Thread 5 solicita recurso
+Thread 6 solicita recurso
+Thread 7 solicita recurso
+Thread 8 solicita recurso
+Thread 9 solicita recurso
+Thread 10 solicita recurso
+Thread 11 solicita recurso
+Thread 12 solicita recurso
+Thread 13 solicita recurso
+Thread 14 solicita recurso
+Thread 15 solicita recurso
+Thread 16 solicita recurso
+Thread 17 solicita recurso
+Thread 18 solicita recurso
+Thread 19 solicita recurso
+Thread 20 solicita recurso
+Thread 21 solicita recurso
+Thread 22 solicita recurso
+Thread 23 solicita recurso
+Thread 24 solicita recurso
+Thread 25 solicita recurso
+Thread 26 solicita recurso
+Thread 27 solicita recurso
+Thread 28 solicita recurso
+
+<<< Thread principal desocupa el recurso >>>
+
+Thread 29 solicita recurso
+Thread 0 obtiene recurso
+Thread 1 obtiene recurso
+Thread 2 obtiene recurso
+Thread 3 obtiene recurso
+Thread 4 obtiene recurso
+Thread 5 obtiene recurso
+Thread 6 obtiene recurso
+Thread 7 obtiene recurso
+Thread 8 obtiene recurso
+Thread 9 obtiene recurso
+Thread 10 obtiene recurso
+Thread 11 obtiene recurso
+Thread 12 obtiene recurso
+Thread 13 obtiene recurso
+Thread 14 obtiene recurso
+Thread 15 obtiene recurso
+Thread 16 obtiene recurso
+Thread 17 obtiene recurso
+Thread 18 obtiene recurso
+Thread 19 obtiene recurso
+Thread 20 obtiene recurso
+Thread 21 obtiene recurso
+Thread 22 obtiene recurso
+Thread 23 obtiene recurso
+Thread 24 obtiene recurso
+Thread 25 obtiene recurso
+Thread 26 obtiene recurso
+Thread 27 obtiene recurso
+Thread 28 obtiene recurso
+Thread 29 obtiene recurso
+Bien.  Se respeto orden de llegada.
+Felicitaciones: su tarea funciona.  Los threads
+siempre fueron atendidos por orden de llegada.
+
+		Comando "make test-sanitize"
+
+make clean
+make[1]: se entra en el directorio '/home/pss/Documentos/Pss/Pss/T6'
+rm -f *.o
+rm -f test-t6
+make[1]: se sale del directorio '/home/pss/Documentos/Pss/Pss/T6'
+make "CFLAGS=-g -fsanitize=thread -Wall -pedantic -std=c99 -DVALGRIND" "LDFLAGS=-fsanitize=thread"
+make[1]: se entra en el directorio '/home/pss/Documentos/Pss/Pss/T6'
+cc -g -fsanitize=thread -Wall -pedantic -std=c99 -DVALGRIND   -c -o test-t6.o test-t6.c
+cc -g -fsanitize=thread -Wall -pedantic -std=c99 -DVALGRIND   -c -o t6.o t6.c
+cc -fsanitize=thread  test-t6.o t6.o  -lpthread -o test-t6
+make[1]: se sale del directorio '/home/pss/Documentos/Pss/Pss/T6'
+./test-t6
+
+----------------------------------------
+Iniciando: thread principal obtiene el recurso
+2 threads solicitaran el recurso
+Thread 0 solicita recurso
+
+<<< Thread principal desocupa el recurso >>>
+
+Thread 0 obtiene recurso
+Thread 1 solicita recurso
+Thread 1 obtiene recurso
+Bien.  Se respeto orden de llegada.
+
+----------------------------------------
+Iniciando: thread principal obtiene el recurso
+5 threads solicitaran el recurso
+Thread 0 solicita recurso
+Thread 1 solicita recurso
+Thread 2 solicita recurso
+Thread 3 solicita recurso
+Thread 4 solicita recurso
+
+<<< Thread principal desocupa el recurso >>>
+
+Thread 0 obtiene recurso
+Thread 1 obtiene recurso
+Thread 2 obtiene recurso
+Thread 3 obtiene recurso
+Thread 4 obtiene recurso
+Bien.  Se respeto orden de llegada.
+
+----------------------------------------
+Iniciando: thread principal obtiene el recurso
+10 threads solicitaran el recurso
+Thread 0 solicita recurso
+Thread 1 solicita recurso
+Thread 2 solicita recurso
+Thread 3 solicita recurso
+Thread 4 solicita recurso
+Thread 5 solicita recurso
+Thread 6 solicita recurso
+Thread 7 solicita recurso
+Thread 8 solicita recurso
+
+<<< Thread principal desocupa el recurso >>>
+
+Thread 9 solicita recurso
+Thread 0 obtiene recurso
+Thread 1 obtiene recurso
+Thread 2 obtiene recurso
+Thread 3 obtiene recurso
+Thread 4 obtiene recurso
+Thread 5 obtiene recurso
+Thread 6 obtiene recurso
+Thread 7 obtiene recurso
+Thread 8 obtiene recurso
+Thread 9 obtiene recurso
+Bien.  Se respeto orden de llegada.
+
+----------------------------------------
+Iniciando: thread principal obtiene el recurso
+20 threads solicitaran el recurso
+Thread 0 solicita recurso
+Thread 1 solicita recurso
+Thread 2 solicita recurso
+Thread 3 solicita recurso
+Thread 4 solicita recurso
+Thread 5 solicita recurso
+Thread 6 solicita recurso
+Thread 7 solicita recurso
+Thread 8 solicita recurso
+Thread 9 solicita recurso
+Thread 10 solicita recurso
+Thread 11 solicita recurso
+Thread 12 solicita recurso
+Thread 13 solicita recurso
+Thread 14 solicita recurso
+Thread 15 solicita recurso
+Thread 16 solicita recurso
+Thread 17 solicita recurso
+Thread 18 solicita recurso
+Thread 19 solicita recurso
+
+<<< Thread principal desocupa el recurso >>>
+
+Thread 0 obtiene recurso
+Thread 1 obtiene recurso
+Thread 2 obtiene recurso
+Thread 3 obtiene recurso
+Thread 4 obtiene recurso
+Thread 5 obtiene recurso
+Thread 6 obtiene recurso
+Thread 7 obtiene recurso
+Thread 8 obtiene recurso
+Thread 9 obtiene recurso
+Thread 10 obtiene recurso
+Thread 11 obtiene recurso
+Thread 12 obtiene recurso
+Thread 13 obtiene recurso
+Thread 14 obtiene recurso
+Thread 15 obtiene recurso
+Thread 16 obtiene recurso
+Thread 17 obtiene recurso
+Thread 18 obtiene recurso
+Thread 19 obtiene recurso
+Bien.  Se respeto orden de llegada.
+
+----------------------------------------
+Iniciando: thread principal obtiene el recurso
+30 threads solicitaran el recurso
+Thread 0 solicita recurso
+Thread 1 solicita recurso
+Thread 2 solicita recurso
+Thread 3 solicita recurso
+Thread 4 solicita recurso
+Thread 5 solicita recurso
+Thread 6 solicita recurso
+Thread 7 solicita recurso
+Thread 8 solicita recurso
+Thread 9 solicita recurso
+Thread 10 solicita recurso
+Thread 11 solicita recurso
+Thread 12 solicita recurso
+Thread 13 solicita recurso
+Thread 14 solicita recurso
+Thread 15 solicita recurso
+Thread 16 solicita recurso
+Thread 17 solicita recurso
+Thread 18 solicita recurso
+Thread 19 solicita recurso
+Thread 20 solicita recurso
+Thread 21 solicita recurso
+Thread 22 solicita recurso
+Thread 23 solicita recurso
+Thread 24 solicita recurso
+Thread 25 solicita recurso
+Thread 26 solicita recurso
+Thread 27 solicita recurso
+Thread 28 solicita recurso
+
+<<< Thread principal desocupa el recurso >>>
+
+Thread 29 solicita recurso
+Thread 0 obtiene recurso
+Thread 1 obtiene recurso
+Thread 2 obtiene recurso
+Thread 3 obtiene recurso
+Thread 4 obtiene recurso
+Thread 5 obtiene recurso
+Thread 6 obtiene recurso
+Thread 7 obtiene recurso
+Thread 8 obtiene recurso
+Thread 9 obtiene recurso
+Thread 10 obtiene recurso
+Thread 11 obtiene recurso
+Thread 12 obtiene recurso
+Thread 13 obtiene recurso
+Thread 14 obtiene recurso
+Thread 15 obtiene recurso
+Thread 16 obtiene recurso
+Thread 17 obtiene recurso
+Thread 18 obtiene recurso
+Thread 19 obtiene recurso
+Thread 20 obtiene recurso
+Thread 21 obtiene recurso
+Thread 22 obtiene recurso
+Thread 23 obtiene recurso
+Thread 24 obtiene recurso
+Thread 25 obtiene recurso
+Thread 26 obtiene recurso
+Thread 27 obtiene recurso
+Thread 28 obtiene recurso
+Thread 29 obtiene recurso
+Bien.  Se respeto orden de llegada.
+Felicitaciones: su tarea funciona.  Los threads
+siempre fueron atendidos por orden de llegada.
+
