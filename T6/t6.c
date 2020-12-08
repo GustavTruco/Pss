@@ -17,11 +17,9 @@ void ocupar() {
     pthread_cond_wait(&cond,&m);
   }
   num++;
-  pthread_mutex_unlock(&m);
 }
 
 void desocupar() {
-  pthread_mutex_lock(&m);
   visor++;
   pthread_cond_broadcast(&cond);
   pthread_mutex_unlock(&m);
