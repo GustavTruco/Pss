@@ -31,6 +31,7 @@ double viajante_par(int z[], int n, double **m, int nperm, int p) {
     double minDist= DBL_MAX;
 
     for (int k=0; k<p;k++){
+        init_rand_seed(random());
         int fds1[2];
         int fds2[2];
         pipe(fds1);
